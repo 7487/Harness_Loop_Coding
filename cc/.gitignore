@@ -1,0 +1,40 @@
+# Claude loop runtime (logs and output are ephemeral)
+.claude/out/*.json
+.claude/out/*.txt
+.claude/logs/*.log
+
+# OS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Node
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Environment & Secrets
+.env
+.env.*
+!.env.example
+credentials.json
+credentials.yaml
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*_secret*
+*_credentials*
+
+# Claude Code project settings (may contain tokens/passwords)
+.claude/settings.json

@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "run_status": {"type": "string", "enum": ["success", "blocked", "failed"]},
+    "active_todo": {"type": "string"},
+    "completed": {"type": "boolean"},
+    "summary": {"type": "string"},
+    "bugs_fixed": {"type": "array", "items": {"type": "string"}},
+    "files_changed": {"type": "array", "items": {"type": "string"}},
+    "state_updated": {"type": "boolean"},
+    "todo_updated": {"type": "boolean"},
+    "next_todo": {"type": "string"},
+    "blockers": {"type": "array", "items": {"type": "string"}}
+  },
+  "required": ["run_status", "active_todo", "completed", "summary", "bugs_fixed", "files_changed", "state_updated", "todo_updated", "next_todo", "blockers"],
+  "additionalProperties": false
+}

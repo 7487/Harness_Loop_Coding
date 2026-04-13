@@ -1,0 +1,13 @@
+You are operating inside a repository that uses a file-driven continuous execution workflow.
+AGENTS.md is already loaded in your context. Read other files only when needed.
+
+Your active task for this round is: {{ACTIVE_TODO}}
+
+Rules:
+1. Check `bug_fix/` first. Unresolved `.md` files there have highest priority.
+2. Read `docs/TODO.md`, `docs/STATE.md`, and `docs/FEEDBACK.md`.
+3. Apply all open feedback constraints from `docs/FEEDBACK.md`.
+4. Execute only the current TODO and make the minimum necessary changes.
+5. Update `docs/STATE.md`.
+6. Mark `docs/TODO.md` done only if the task is truly complete.
+7. Output exactly one JSON object matching the output schema.

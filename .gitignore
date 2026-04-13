@@ -1,7 +1,13 @@
-# Claude loop runtime (logs and output are ephemeral)
-.claude/out/*.json
-.claude/out/*.txt
-.claude/logs/*.log
+# Claude template runtime
+cc/.claude/out/*.json
+cc/.claude/out/*.txt
+cc/.claude/logs/*.log
+cc/.claude/settings.json
+
+# Codex template runtime
+codex/.codex-run/out/*.json
+codex/.codex-run/out/*.txt
+codex/.codex-run/logs/*.log
 
 # OS
 .DS_Store
@@ -22,7 +28,7 @@ node_modules/
 *.swp
 *.swo
 
-# Environment & Secrets
+# Env & secrets
 .env
 .env.*
 !.env.example
@@ -35,6 +41,3 @@ credentials.yaml
 *.jks
 *_secret*
 *_credentials*
-
-# Claude Code project settings (may contain tokens/passwords)
-.claude/settings.json
